@@ -1,0 +1,205 @@
+ * {
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+ }
+ a{
+  text-decoration: none;
+  font-size: large;
+  color: blue;
+ }
+ .main{
+width: 100%;
+height: 100vh;
+background-image: url("../Front-end/images/photo_2026-01-17_20-38-03.jpg");
+background-size: 110% 100%;
+padding: 1em;
+font-size: large;
+font-family: math;
+ }
+ .main .up{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+cursor: pointer;
+ }
+.main .right {
+display: flex;
+  gap: 0.85em;
+}
+
+ .main .right .intro_link{
+  color: blue;
+}
+ .main .right a{
+  color:white;
+ }
+ .main .left :hover{
+color: white;
+ }
+ .main .right :hover{
+color: blue;
+ }
+ .main .middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30vh;
+    gap: 0.5em;
+ }
+ .main .middle h1{
+      color: white;
+ }
+ .main .middle p{
+  color:  white;
+ }
+ .main .middle span{
+  color: blue;
+ }
+ 
+ .about{
+  padding: 3em;
+  display: flex;
+  flex-direction: row;
+  gap:1em;
+ }
+.about .image img{
+  width: 90%;
+ }
+ .about h1{
+  color: blue;
+  margin: 1em 0em 0.75em 0em;
+ }
+ .about .p{
+  color: gray;
+ }
+
+.about span{
+  font-weight: bold;
+}
+ .about .button{
+  color: white;
+  background-color: blue;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  margin-top: 0.75em;
+  border: blue;
+ }
+ .about .button:hover{
+  background-color: rgb(111, 111, 251);
+  cursor: pointer;
+ }
+ .about a:hover{
+  color: black;
+  font-weight: bold;
+ }
+
+
+ .work{
+background-image: url("../Front-end/images/photo_2026-01-17_20-38-08.jpg");
+background-size: cover;
+padding: 3.5em 3.5em;
+display: flex;
+text-align: center;
+color: white;
+ }
+.work a{
+display: inline-block;
+margin: 0.5em;
+}
+.work a:hover{
+  color: rgb(40, 40, 69);
+}
+ .our_work{
+  margin: 4.5em 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+ }
+ .our_work h1{
+color: blue;
+ }
+ .our_work p{
+  color: grey;
+ }
+
+ .imags{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
+ }
+ .imags img{
+  height: 225px;
+  width: 200px;
+  cursor:pointer;
+ }
+ .imags img:hover{
+  transform: scale(1.2);
+  transition: 0.5s
+ }
+
+.contact{
+  background-image: url("../Front-end/images/photo_2026-01-17_20-38-09.jpg");
+  background-size: cover;
+  margin-top:3em;
+  padding: 2em;
+  color: white;
+}
+ .contact .contact_top{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+ }
+
+.contact .contact_middle {
+  margin-top: 4.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contact .contact_middle p{
+ margin-bottom: 2em;
+}
+.contact .contact_middle input,button{
+    padding: 0.75em;
+    border-radius: 1em;
+}
+
+.contact .contact_middle button{
+      background: white;
+    color: blue;
+    cursor: pointer;
+}
+.contact_middle button:hover{
+  background-color:rgb(195, 200, 228)
+}
+.contact .contact_bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 4.5em;
+  color: white;
+  font-size: large;
+}
+.contact .contact_bottom span{
+color: blue;
+}
+@media (max-width: 991px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+}
+  .work {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+  .contact .contact_middle {
+   
+    flex-direction: column;
+    align-items: center;
+}
+}
